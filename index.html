@@ -8,20 +8,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @theme {
-            --btn-color:#7AC943;
-            --text-gray:#4b5563;
-            --gray-500:#6b7280;
+            --color-custom-green:#7AC943;
+            --color-custom-gray:#4E4E4E;
+            --gray-500: #6b7280;
             --gray-100:#f3f4f6;
             --gray-800:#1f2937;
 
-          }    
+          }   
+           
 .nav-menu {
     display: flex;
+}
+h1,h2 {
+     font-family: "Montserrat", sans-serif;
 }
 
 .nav-menu a {
     text-decoration: none;
-    color: #333;
     font-weight: 500;
 }
           
@@ -66,6 +69,8 @@
         gap: 30px;
         transition: all 0.3s ease;
     }
+
+
     /*Cross*/
     .menu-icon.active span:nth-child(1){
         transform: rotate(45deg);
@@ -87,8 +92,7 @@
     </style>
 </head>
 
-<body class="bg-[var(--grey-100)] font-sans">
-
+<body class="font-sans">
     <!-- Navbar -->
     <header class="bg-white">
         <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
@@ -153,7 +157,7 @@
             </div>
 
             <!-- Menu -->
-            <nav class="nav-menu hidden md:flex space-x-8  text-[var(--text-gray)]">
+            <nav class="nav-menu hidden md:flex space-x-8 text-custom-gray">
                 <a href="#" class="hover:text-black ">Home</a>
                 <a href="#" class="hover:text-black">Programs</a>
                 <a href="#" class="hover:text-black">How It Works</a>
@@ -163,7 +167,7 @@
 
             <!-- Contact Button -->
             <button
-                class="hidden md:block border border-black px-5 py-2 rounded-full hover:bg-black hover:text-white transition">
+                class="hidden md:block border border-black px-9 py-4 rounded-full hover:bg-black hover:text-white transition">
                 Contact Us
             </button>
             <!--HamBurger -->
@@ -183,11 +187,11 @@
 
             <!-- Left Content -->
             <div>
-                <h1 class="text-4xl md:text-5xl font-bold text[var(--gray-800)] leading-tight">
+                <h1 class="text-5xl md:text-5xl font-bold text[var(--gray-800)]  leading-tight">
                     We Built Rabbit for Founders Who Got Told “No.”
                 </h1>
 
-                <p class="mt-6 text-[var(--text-gray)] font-semibold text-xl">
+                <p class="mt-4 text-custom-gray font-semibold text-xl">
                     Traditional lenders fund files. We fund people.
                 </p>
 
@@ -198,7 +202,7 @@
                 </p>
 
                 <button
-                    class="mt-6 bg-[var(--btn-color)] text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-green-600 transition">
+                    class="mt-6 bg-custom-green text-white px-9 py-4 rounded-full flex items-center gap-2 hover:bg-green-600 transition">
                     Be Told Yes
                     <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,7 +216,7 @@
 
             <!-- Right Picture -->
             <div class="flex justify-center">
-                <img src="/images/aboutcpy.png" class="max-w-full h-auto">
+                <img src="./assets/images/rabbit-funding.png" class="max-w-full h-auto">
             </div>
 
         </div>
@@ -227,6 +231,133 @@
                 menuIcon.classList.toggle("active");
             });
         </script>
+    </section>
+
+    <section class="bg-gray-100 py-20 px-6 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+
+            <!-- Image -->
+            <div class="flex justify-center md:justify-start">
+                <img src="/assets/images/RF 2.png" alt="Illustration" class="w-full max-w-md">
+            </div>
+
+            <!-- Content -->
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-800 mb-6">
+                    Where We Started
+                </h2>
+
+                <div class="bg-white/60 backdrop-blur-sm rounded-xl p-6 shadow-sm text-xl max-w-md mx-auto md:mx-0">
+                    <p class="text-gray-700 font-medium mb-3 ">
+                        We started Rabbit because we were tired of hearing “You don’t qualify.”
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        We’d built businesses. We knew what working capital could unlock —
+                        and we got rejected anyway. So we stopped asking for permission and
+                        built our own system. One that funds on context, not just credit.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-20 px-6 lg:px-32">
+
+        <div class="max-w-6xl mx-auto">
+
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <h2 class="text-4xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+                    This Isn’t a Tagline. It’s <br class="hidden md:block">
+                    the Track Record.
+                </h2>
+            </div>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+
+                    <div class="w-20 h-20 flex items-center justify-center bg-gray-100 rounded-full mb-6">
+                        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="96" height="96" rx="48" fill="#F5F5F5" />
+                            <path
+                                d="M36.6667 68V63.6667H45.3333V56.95C43.5639 56.5528 41.9844 55.8038 40.5948 54.7032C39.2053 53.6025 38.1848 52.2209 37.5333 50.5583C34.825 50.2333 32.5594 49.0511 30.7365 47.0115C28.9136 44.9719 28.0014 42.5792 28 39.8333V37.6667C28 36.475 28.4247 35.4552 29.274 34.6073C30.1233 33.7594 31.1431 33.3348 32.3333 33.3333H36.6667V29H58.3333V33.3333H62.6667C63.8583 33.3333 64.8788 33.758 65.7282 34.6073C66.5775 35.4567 67.0014 36.4764 67 37.6667V39.8333C67 42.5778 66.0878 44.9705 64.2635 47.0115C62.4392 49.0525 60.1736 50.2348 57.4667 50.5583C56.8167 52.2194 55.7969 53.6011 54.4073 54.7032C53.0178 55.8053 51.4376 56.5542 49.6667 56.95V63.6667H58.3333V68H36.6667ZM36.6667 45.9V37.6667H32.3333V39.8333C32.3333 41.2056 32.7306 42.4427 33.525 43.5448C34.3194 44.6469 35.3667 45.432 36.6667 45.9ZM58.3333 45.9C59.6333 45.4306 60.6806 44.6448 61.475 43.5427C62.2694 42.4406 62.6667 41.2041 62.6667 39.8333V37.6667H58.3333V45.9Z"
+                                fill="#2B2B2B" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4 ">
+                        Numbers and Money Follow. They Do Not Lead.
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Make the right decision. Even if it doesn’t boost revenue right now.
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+
+                    <div class="w-20 h-20 flex items-center justify-center bg-gray-100 rounded-full mb-6">
+                        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="96" height="96" rx="48" fill="#F5F5F5" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M59.6832 29.9989C59.3213 30.569 58.826 31.3548 58.5825 31.7452L58.1396 32.4551L56.1567 32.9626C54.4666 33.3954 54.1469 33.525 53.9906 33.8411C53.7538 34.32 53.845 34.4854 55.2987 36.215L56.4547 37.59L56.3205 39.607C56.1986 41.4382 56.2111 41.6514 56.4562 41.9223C56.6047 42.0863 56.8493 42.2205 56.9998 42.2205C57.1502 42.2205 58.0258 41.9124 58.9453 41.5357C59.8649 41.1591 60.7115 40.8509 60.8263 40.8509C60.9412 40.8509 61.7843 41.1577 62.6997 41.5327C65.5182 42.6874 65.5358 42.6692 65.2762 38.8726L65.1876 37.5791L66.4172 36.1334C67.0935 35.3383 67.6876 34.5274 67.7374 34.3314C67.8878 33.7402 67.3985 33.4487 65.4293 32.9553C64.2437 32.6582 63.5324 32.4015 63.4015 32.2232C63.2906 32.072 62.777 31.2979 62.2602 30.5028C61.4271 29.2213 61.2649 29.0517 60.8309 29.0097C60.375 28.9658 60.2957 29.0341 59.6832 29.9989ZM32.8393 34.4657C31.457 34.7391 29.9798 35.7578 29.202 36.9737C28.1963 38.5457 28.2056 38.4321 28.254 48.7117L28.2976 57.9779L28.7909 58.9797C29.385 60.186 30.4737 61.2548 31.6885 61.8242C32.5151 62.2117 32.7069 62.2359 35.5248 62.3082L38.4909 62.3843L38.4457 64.0582C38.4051 65.559 38.4367 65.8028 38.7514 66.415C39.2603 67.4049 40.1875 68.0051 41.2001 68C41.6615 67.9977 42.2101 67.882 42.5107 67.7236C42.795 67.5739 44.5636 66.294 46.4407 64.8797L49.8539 62.3082H54.2318C58.1685 62.3082 58.6961 62.2783 59.468 62.0129C61.1429 61.4366 62.1815 60.4892 62.9807 58.8081L63.451 57.8189L63.4974 50.9521L63.544 44.0854L62.178 43.5387L60.8122 42.9921L59.3163 43.6096C57.4973 44.3605 56.593 44.4265 55.6202 43.8799C55.2231 43.6567 54.82 43.2534 54.5716 42.8309C54.1982 42.1957 54.1708 42.0308 54.2056 40.6227C54.2263 39.7857 54.2773 38.9297 54.3187 38.7204C54.3791 38.415 54.1678 38.0702 53.2459 36.9704C52.4901 36.069 52.0376 35.3796 51.9219 34.954L51.7461 34.3072L42.609 34.324C37.5834 34.3331 33.1872 34.3969 32.8393 34.4657ZM38.4287 44.4477C37.8551 45.1768 38.1859 46.191 39.0686 46.4093C39.2545 46.4552 42.5801 46.4732 46.4585 46.4491L53.5103 46.4055L53.8012 46.0462C54.2049 45.5475 54.1769 44.7883 53.7398 44.3775C53.3881 44.0473 53.3738 44.0467 46.0658 44.0467H38.744L38.4287 44.4477ZM38.4287 50.687C37.9645 51.277 38.0211 51.8555 38.5897 52.3339L39.0663 52.7349L43.0926 52.6899C47.1158 52.6448 47.1193 52.6445 47.4098 52.2855C47.8134 51.7868 47.7854 51.0276 47.3483 50.6169C47.0045 50.2939 46.8968 50.286 42.87 50.286H38.744L38.4287 50.687Z"
+                                fill="#2B2B2B" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">
+                        Simplicity is Genius
+                    </h3>
+
+                    <p class="text-gray-600">
+                        If it’s complicated, it’s wrong. Strip it down until it’s crystal clear.
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-custom-green text-white p-8 rounded-2xl shadow-lg">
+
+                    <div class="w-20 h-20 flex items-center justify-center bg-white/10 rounded-full mb-6">
+                        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="96" height="96" rx="48" fill="#F5F5F5" fill-opacity="0.16" />
+                            <path
+                                d="M20.4063 32.4025C20.1463 32.6616 20.0001 33.0135 20.0001 33.3805V45.8766C20.0001 59.955 19.9763 59.4446 20.584 59.777C20.9057 59.9432 29.3414 59.9432 29.6631 59.777C30.2707 59.4446 30.2469 59.955 30.2469 45.8766V33.3805C30.2469 33.0135 30.1007 32.6616 29.8407 32.4025C29.582 32.1447 29.2316 32 28.8663 32H21.3807C21.0154 32 20.6651 32.1447 20.4063 32.4025ZM26.5175 52.8446C27.435 53.5924 27.7805 54.4709 27.5065 55.4442C26.8988 57.5928 23.9916 57.937 22.9788 55.9784C22.4665 54.9932 22.5856 54.0317 23.2886 53.2601C23.8963 52.5835 24.3252 52.4054 25.2665 52.441C25.9456 52.4766 26.1244 52.536 26.5175 52.8446Z"
+                                fill="#FEFEFE" />
+                            <path
+                                d="M44.6877 32.2612C44.4017 32.4748 37.1337 40.6655 35.5609 42.5647C35.263 42.9209 35.2273 43.0396 35.2869 43.5619C35.3345 44.1435 35.3822 44.2029 36.5737 45.3543C38.4205 47.123 39.612 47.6691 41.6613 47.6691C42.9004 47.6691 44.1158 47.3486 45.057 46.7669C45.3311 46.5889 46.4511 45.568 47.5353 44.4996L47.9573 44.0842C48.8882 43.168 50.2981 42.9439 51.4672 43.5263C52.7447 44.1548 53.822 45.1265 54.5786 46.3326L56.5787 49.5209C60.1889 55.2662 59.9029 54.9576 61.5233 54.8863C62.4408 54.8507 62.548 54.827 62.8816 54.5065C63.1177 54.2789 63.251 53.9651 63.251 53.6373V44.5353C63.251 35.5968 63.2272 34.8845 63.0365 34.659C62.9293 34.5165 61.9284 33.8755 60.8084 33.2345C59.4812 32.4645 57.9756 32.0552 56.4412 32.0472L51.92 32.0237L45.5311 32.0016C45.2301 32.0006 44.936 32.0911 44.6877 32.2612Z"
+                                fill="#FEFEFE" />
+                            <path
+                                d="M66.1593 32.4025C65.8993 32.6616 65.7531 33.0135 65.7531 33.3805V45.8766C65.7531 59.955 65.7293 59.4446 66.3369 59.777C66.6586 59.9432 75.0943 59.9432 75.416 59.777C76.0237 59.4446 75.9999 59.955 75.9999 45.8766V33.3805C75.9999 33.0135 75.8537 32.6616 75.5937 32.4025C75.3349 32.1447 74.9846 32 74.6193 32H67.1337C66.7684 32 66.418 32.1447 66.1593 32.4025ZM72.2705 52.8446C73.188 53.5924 73.5335 54.4709 73.2595 55.4442C72.6518 57.5928 69.7446 57.937 68.7318 55.9784C68.2195 54.9932 68.3386 54.0317 69.0416 53.2601C69.6493 52.5835 70.0782 52.4054 71.0195 52.441C71.6986 52.4766 71.8773 52.536 72.2705 52.8446Z"
+                                fill="#FEFEFE" />
+                            <path
+                                d="M33.583 34.5759C33.4877 34.6115 33.2613 34.7777 33.0826 34.9439C32.8699 35.1406 32.749 35.4173 32.749 35.707V52.6649C32.749 54.9081 33.3778 57.1063 34.5639 59.0103L35.3226 60.2281C36.7405 62.4953 38.0511 64.4896 38.2417 64.6676C38.4634 64.8809 38.7591 65 39.0667 65H49.3578C51.2077 65 53.0325 64.5723 54.6897 63.7503L54.9225 63.6349C57.5319 62.3291 57.8059 62.163 60.2723 60.3112C61.7021 59.2428 62.9531 58.2457 63.0604 58.0914C63.1676 57.9489 63.251 57.6996 63.251 57.5572C63.251 57.2842 63.2391 57.2842 61.7259 57.2842C59.9268 57.2842 59.2714 57.1299 58.4374 56.4888C57.9489 56.109 57.3889 55.3018 54.8034 51.1827L52.2895 47.1912C51.9383 46.6335 51.4447 46.1798 50.8596 45.8766C50.3326 45.607 49.6924 45.7036 49.2685 46.1167L48.3574 47.0043C46.9038 48.4288 46.6179 48.6424 45.6051 49.141C44.08 49.8888 43.2221 50.0906 41.6256 50.0906C38.8971 50.0906 37.0383 49.2004 34.6315 46.755C33.1303 45.2356 32.8205 44.6183 32.892 43.3007C32.9158 42.6716 33.0111 42.2205 33.1899 41.8525C33.3447 41.5558 34.7745 39.8227 36.383 37.9946C37.9796 36.1665 39.3022 34.6353 39.3022 34.5759C39.3022 34.4809 33.8571 34.4809 33.583 34.5759Z"
+                                fill="#FEFEFE" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-3xl font-semibold mb-4">
+                        Yes Before No
+                    </h3>
+
+                    <p class="text-white">
+                        Always look for the way it can be done — not why it can’t.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 </body>
 

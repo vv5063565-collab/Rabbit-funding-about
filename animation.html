@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .animation-box {
+            animation: move 1s infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0px) rotate(0);
+            }
+
+            70% {
+                transform: translateX(300px) rotate(360deg);
+            }
+        }
+
+        .card-box {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            background-color: black;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="animation-box" style="width: 100px; height: 100px; background-color: red;"></div> -->
+    <section style="min-height: 100vh; background-color: red;"></section>
+    <div style="min-height: 100vh; display: flex;align-items: center; justify-content: center;">
+        <div class="card-box">
+            <div data-aos="fade-right" data-aos-duration="1500" class="card"></div>
+            <div data-aos="fade-right" data-aos-duration="1200" class="card"></div>
+            <div data-aos="fade-right" data-aos-duration="900" class="card"></div>
+            <div data-aos="fade-right" data-aos-duration="600" class="card"></div>
+            <div data-aos="fade-right" data-aos-duration="300" class="card"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
